@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Medium.ttf">
+            <string>Barlow-Medium</string>
+        </array>
+        <array key="Barlow-Regular.ttf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NearByCV" customModule="ChanceUpon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="281" height="392"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="281" height="392"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alexNearByImg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KFm-B7-lwp">
+                        <rect key="frame" x="3" y="5" width="275.5" height="275.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="KFm-B7-lwp" secondAttribute="height" multiplier="1:1" id="H9S-JF-8eL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="27"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLc-S3-3LL" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                        <rect key="frame" x="3" y="5" width="275.5" height="246"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="27"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtR-NK-DQb">
+                        <rect key="frame" x="22" y="32" width="40" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="RtR-NK-DQb" secondAttribute="height" multiplier="42:41" id="iEV-KJ-xhW"/>
+                        </constraints>
+                        <state key="normal" image="crossImg"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="My8-dR-56T">
+                        <rect key="frame" x="22" y="78" width="83" height="19"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO, NOT NOW." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFR-9P-arr">
+                                <rect key="frame" x="0.0" y="0.0" width="79" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ry0-sh-UCv">
+                                <rect key="frame" x="0.0" y="13.5" width="79" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Kvs-Bo-yFe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="83" id="3xY-6p-ICC"/>
+                            <constraint firstAttribute="height" constant="19" id="bAL-cB-Jli"/>
+                            <constraint firstItem="DFR-9P-arr" firstAttribute="top" secondItem="My8-dR-56T" secondAttribute="top" id="jjl-2d-fPw"/>
+                            <constraint firstItem="Ry0-sh-UCv" firstAttribute="trailing" secondItem="DFR-9P-arr" secondAttribute="trailing" id="mcW-8r-SLQ"/>
+                            <constraint firstItem="Ry0-sh-UCv" firstAttribute="top" secondItem="DFR-9P-arr" secondAttribute="bottom" id="ndA-zS-mqs"/>
+                            <constraint firstItem="Ry0-sh-UCv" firstAttribute="leading" secondItem="DFR-9P-arr" secondAttribute="leading" id="y7z-gI-RQn"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rPh-mB-CRs">
+                        <rect key="frame" x="3" y="230" width="275" height="153"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                <real key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="RSc-pB-nPZ">
+                        <rect key="frame" x="38" y="308.5" width="205" height="19"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skiing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSn-OF-efS" customClass="InsetLabel" customModule="ChanceUpon" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="11"/>
+                                <color key="textColor" red="0.84528875349999999" green="0.18206679819999999" blue="0.4060205221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="13"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarantino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXm-Zc-cqI" customClass="InsetLabel" customModule="ChanceUpon" customModuleProvider="target">
+                                <rect key="frame" x="71.5" y="0.0" width="62" height="19"/>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="11"/>
+                                <color key="textColor" red="0.84528875349999999" green="0.18206679819999999" blue="0.4060205221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="13"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-cL-mrY" customClass="InsetLabel" customModule="ChanceUpon" customModuleProvider="target">
+                                <rect key="frame" x="142.5" y="0.0" width="62.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="11"/>
+                                <color key="textColor" red="0.84528875349999999" green="0.18206679819999999" blue="0.4060205221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="13"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="lSD-95-3jP">
+                        <rect key="frame" x="71.5" y="334.5" width="138" height="19"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Writing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niE-NT-cHx" customClass="InsetLabel" customModule="ChanceUpon" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="64.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="11"/>
+                                <color key="textColor" red="0.84528875349999999" green="0.18206679819999999" blue="0.4060205221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="13"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gym" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgU-sd-6py" customClass="InsetLabel" customModule="ChanceUpon" customModuleProvider="target">
+                                <rect key="frame" x="73.5" y="0.0" width="64.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="11"/>
+                                <color key="textColor" red="0.84528875349999999" green="0.18206679819999999" blue="0.4060205221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="13"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaG-Ji-QtP">
+                        <rect key="frame" x="57.5" y="207" width="166" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="51" id="A3g-Fm-zFs"/>
+                            <constraint firstAttribute="width" constant="166" id="JS7-nI-KYc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="13"/>
+                        <state key="normal" image="chancItABtnImg"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="23"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="15"/>
+                        </variation>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alex, 25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZI-St-Utv">
+                        <rect key="frame" x="113.5" y="261" width="54" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="17"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 metres away  |  Available" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nr8-ng-0hf">
+                        <rect key="frame" x="75.5" y="278.5" width="130.5" height="13"/>
+                        <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="11"/>
+                        <color key="textColor" red="0.84528875349999999" green="0.18206679819999999" blue="0.4060205221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="Barlow-Medium" family="Barlow" pointSize="13"/>
+                        </variation>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineImg" translatesAutoresizingMaskIntoConstraints="NO" id="VOI-aE-wcj">
+                        <rect key="frame" x="29.5" y="298.5" width="222" height="3"/>
+                    </imageView>
+                    <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="25V-gg-wVi">
+                        <rect key="frame" x="60.5" y="186.5" width="160" height="27.5"/>
+                        <color key="pageIndicatorTintColor" red="0.95235019919999997" green="0.95248347519999998" blue="0.95230811829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="currentPageIndicatorTintColor" red="0.90360629560000005" green="0.1669575572" blue="0.35579740999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </pageControl>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="oZI-St-Utv" firstAttribute="top" secondItem="GaG-Ji-QtP" secondAttribute="bottom" constant="3" id="29a-oH-uvB"/>
+                <constraint firstAttribute="bottom" secondItem="rPh-mB-CRs" secondAttribute="bottom" constant="9" id="2Sx-aC-YgB"/>
+                <constraint firstItem="GaG-Ji-QtP" firstAttribute="top" secondItem="rPh-mB-CRs" secondAttribute="top" constant="-23" id="7vG-Ru-jKZ"/>
+                <constraint firstItem="RSc-pB-nPZ" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.73" id="89a-W2-yJQ"/>
+                <constraint firstItem="Nr8-ng-0hf" firstAttribute="centerX" secondItem="oZI-St-Utv" secondAttribute="centerX" id="Bck-zo-jS8"/>
+                <constraint firstItem="25V-gg-wVi" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ByP-re-ukU"/>
+                <constraint firstItem="KFm-B7-lwp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="EaS-fX-qWW"/>
+                <constraint firstItem="VOI-aE-wcj" firstAttribute="top" secondItem="Nr8-ng-0hf" secondAttribute="bottom" constant="7" id="Fct-yw-6A5"/>
+                <constraint firstItem="RSc-pB-nPZ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="HOj-uf-O8w"/>
+                <constraint firstItem="My8-dR-56T" firstAttribute="leading" secondItem="RtR-NK-DQb" secondAttribute="leading" id="MXV-rl-WaK"/>
+                <constraint firstItem="My8-dR-56T" firstAttribute="top" secondItem="RtR-NK-DQb" secondAttribute="bottom" constant="7" id="Nb8-5r-NIx"/>
+                <constraint firstItem="VOI-aE-wcj" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="OMl-Xo-vz1"/>
+                <constraint firstItem="lSD-95-3jP" firstAttribute="top" secondItem="RSc-pB-nPZ" secondAttribute="bottom" constant="7" id="PL2-kW-ZQP"/>
+                <constraint firstItem="rPh-mB-CRs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="SQV-Cp-hrj"/>
+                <constraint firstItem="RSc-pB-nPZ" firstAttribute="top" secondItem="VOI-aE-wcj" secondAttribute="bottom" constant="7" id="Slv-1h-WW9"/>
+                <constraint firstItem="GaG-Ji-QtP" firstAttribute="top" secondItem="25V-gg-wVi" secondAttribute="bottom" constant="-7" id="TQ2-Ei-tIO"/>
+                <constraint firstAttribute="trailing" secondItem="rPh-mB-CRs" secondAttribute="trailing" constant="3" id="Y5k-B4-Mnr"/>
+                <constraint firstItem="RtR-NK-DQb" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.1" id="YBE-jz-B2V"/>
+                <constraint firstItem="lSD-95-3jP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="YRO-vV-ARY"/>
+                <constraint firstItem="rPh-mB-CRs" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.39" id="ZDC-NU-TIG"/>
+                <constraint firstItem="Nr8-ng-0hf" firstAttribute="top" secondItem="oZI-St-Utv" secondAttribute="bottom" id="bW6-ph-Cy4"/>
+                <constraint firstItem="RtR-NK-DQb" firstAttribute="leading" secondItem="KFm-B7-lwp" secondAttribute="leading" constant="19" id="cpw-W7-s84"/>
+                <constraint firstAttribute="trailing" secondItem="KFm-B7-lwp" secondAttribute="trailing" constant="2.7000000000000002" id="fgE-qt-4hf"/>
+                <constraint firstItem="RtR-NK-DQb" firstAttribute="top" secondItem="KFm-B7-lwp" secondAttribute="top" constant="27" id="jaP-TO-cjl"/>
+                <constraint firstItem="rPh-mB-CRs" firstAttribute="top" secondItem="PLc-S3-3LL" secondAttribute="bottom" constant="-21" id="k9r-jn-2rU"/>
+                <constraint firstItem="PLc-S3-3LL" firstAttribute="top" secondItem="KFm-B7-lwp" secondAttribute="top" id="mjd-QB-L34"/>
+                <constraint firstItem="DFR-9P-arr" firstAttribute="leading" secondItem="RtR-NK-DQb" secondAttribute="leading" id="nA0-HD-al5"/>
+                <constraint firstItem="GaG-Ji-QtP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pbJ-Ga-n4t"/>
+                <constraint firstItem="KFm-B7-lwp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2.8999999999999999" id="qaq-j0-6iv"/>
+                <constraint firstItem="oZI-St-Utv" firstAttribute="centerX" secondItem="GaG-Ji-QtP" secondAttribute="centerX" id="vMC-gJ-V7f"/>
+                <constraint firstItem="PLc-S3-3LL" firstAttribute="leading" secondItem="KFm-B7-lwp" secondAttribute="leading" id="xUn-0Q-uxT"/>
+                <constraint firstItem="lSD-95-3jP" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.49" id="xi5-P0-XC1"/>
+                <constraint firstItem="PLc-S3-3LL" firstAttribute="trailing" secondItem="KFm-B7-lwp" secondAttribute="trailing" id="xqd-En-b1d"/>
+                <constraint firstItem="VOI-aE-wcj" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.79" id="zNd-Ol-Re9"/>
+            </constraints>
+            <size key="customSize" width="281" height="392"/>
+            <connections>
+                <outlet property="chanceItBtn" destination="GaG-Ji-QtP" id="deB-aJ-9zG"/>
+                <outlet property="disLikeBtn" destination="RtR-NK-DQb" id="Co3-S1-haX"/>
+                <outlet property="distanceLbl" destination="Nr8-ng-0hf" id="6NZ-TM-vin"/>
+                <outlet property="gymLbl" destination="FgU-sd-6py" id="Ut0-nS-wF8"/>
+                <outlet property="notInterestedView" destination="My8-dR-56T" id="vxM-vg-V2o"/>
+                <outlet property="readingLbl" destination="zqh-cL-mrY" id="bxD-1L-Ec4"/>
+                <outlet property="rectCardImgView" destination="rPh-mB-CRs" id="Gcu-Tx-Qls"/>
+                <outlet property="skiingLbl" destination="vSn-OF-efS" id="HYm-i0-eu6"/>
+                <outlet property="taranTinoLbl" destination="CXm-Zc-cqI" id="xPr-Fw-hoi"/>
+                <outlet property="userImgSlideShow" destination="PLc-S3-3LL" id="tx6-ua-3Mh"/>
+                <outlet property="userImgView" destination="KFm-B7-lwp" id="TNt-mz-gZn"/>
+                <outlet property="userNameAgeLbl" destination="oZI-St-Utv" id="3sg-g1-bVv"/>
+                <outlet property="writingLbl" destination="niE-NT-cHx" id="cSl-pP-EFq"/>
+            </connections>
+            <point key="canvasLocation" x="103.62318840579711" y="187.5"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="CXm-Zc-cqI">
+            <size key="intrinsicContentSize" width="51.5" height="19"/>
+        </designable>
+        <designable name="FgU-sd-6py">
+            <size key="intrinsicContentSize" width="29.5" height="19"/>
+        </designable>
+        <designable name="niE-NT-cHx">
+            <size key="intrinsicContentSize" width="40.5" height="19"/>
+        </designable>
+        <designable name="vSn-OF-efS">
+            <size key="intrinsicContentSize" width="36.5" height="19"/>
+        </designable>
+        <designable name="zqh-cL-mrY">
+            <size key="intrinsicContentSize" width="47" height="19"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="alexNearByImg" width="600" height="588"/>
+        <image name="chancItABtnImg" width="342" height="92.5"/>
+        <image name="crossImg" width="124" height="124"/>
+        <image name="lineImg" width="921.5" height="3"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

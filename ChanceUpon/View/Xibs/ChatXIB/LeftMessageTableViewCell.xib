@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.ttf">
+            <string>Barlow-Regular</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="72" id="kW8-bq-B53" customClass="LeftMessageTableViewCell" customModule="ChanceUpon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kW8-bq-B53" id="dzx-5Z-3vc">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3HO-Mw-pKl">
+                        <rect key="frame" x="13" y="19" width="42" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbb-dq-CY3">
+                                <rect key="frame" x="13" y="7" width="10" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gvt-7t-NS0">
+                                <rect key="frame" x="13" y="7" width="10" height="20"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="15"/>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84516221280000003" green="0.84528136249999997" blue="0.84512454270000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gvt-7t-NS0" firstAttribute="leading" secondItem="fbb-dq-CY3" secondAttribute="leading" id="BQ7-Qo-uvf"/>
+                            <constraint firstItem="fbb-dq-CY3" firstAttribute="leading" secondItem="3HO-Mw-pKl" secondAttribute="leading" constant="13" id="HKx-hM-22P"/>
+                            <constraint firstItem="fbb-dq-CY3" firstAttribute="top" secondItem="3HO-Mw-pKl" secondAttribute="top" constant="7" id="YJS-0l-Jk5"/>
+                            <constraint firstItem="Gvt-7t-NS0" firstAttribute="trailing" secondItem="fbb-dq-CY3" secondAttribute="trailing" id="dkq-hZ-deN"/>
+                            <constraint firstItem="Gvt-7t-NS0" firstAttribute="bottom" secondItem="fbb-dq-CY3" secondAttribute="bottom" id="fPd-dt-vus"/>
+                            <constraint firstItem="Gvt-7t-NS0" firstAttribute="top" secondItem="fbb-dq-CY3" secondAttribute="top" id="gEm-dh-6vK"/>
+                            <constraint firstAttribute="trailing" secondItem="fbb-dq-CY3" secondAttribute="trailing" constant="19" id="n29-Mf-ZFw"/>
+                            <constraint firstAttribute="bottom" secondItem="fbb-dq-CY3" secondAttribute="bottom" constant="7" id="zbm-9n-m4I"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoK-s7-oRB">
+                        <rect key="frame" x="13" y="42.5" width="13" height="10.5"/>
+                        <color key="backgroundColor" red="0.84816163779999998" green="0.84538120029999997" blue="0.84879195689999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="w8h-K2-cbv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xoK-s7-oRB" firstAttribute="leading" secondItem="3HO-Mw-pKl" secondAttribute="leading" id="07V-6P-YSw"/>
+                    <constraint firstAttribute="bottom" secondItem="3HO-Mw-pKl" secondAttribute="bottom" constant="19" id="6q8-ON-ZG9"/>
+                    <constraint firstItem="xoK-s7-oRB" firstAttribute="bottom" secondItem="3HO-Mw-pKl" secondAttribute="bottom" id="USh-Tz-crw"/>
+                    <constraint firstItem="xoK-s7-oRB" firstAttribute="top" secondItem="3HO-Mw-pKl" secondAttribute="top" constant="23.5" id="WvS-uy-C4q"/>
+                    <constraint firstItem="3HO-Mw-pKl" firstAttribute="leading" secondItem="dzx-5Z-3vc" secondAttribute="leading" constant="13" id="a8Z-ve-6pn"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3HO-Mw-pKl" secondAttribute="trailing" constant="23" id="hSC-45-RfX"/>
+                    <constraint firstItem="3HO-Mw-pKl" firstAttribute="top" secondItem="dzx-5Z-3vc" secondAttribute="top" constant="19" id="ycm-Vs-9Px"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="backView" destination="3HO-Mw-pKl" id="kYo-8Y-BnQ"/>
+                <outlet property="messageLBL" destination="Gvt-7t-NS0" id="cwI-Zd-HLb"/>
+            </connections>
+            <point key="canvasLocation" x="181.875" y="164.78873239436621"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
